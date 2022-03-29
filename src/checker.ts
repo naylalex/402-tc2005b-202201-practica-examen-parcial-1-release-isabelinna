@@ -1,6 +1,4 @@
 function isPalindrome(text: string): boolean {
-console.log('isPalindrome/start');
-console.log(text);
 let middle : number = text.length/2;
 let bPalindrome : boolean = true;
 if(text.length % 2 != 0){
