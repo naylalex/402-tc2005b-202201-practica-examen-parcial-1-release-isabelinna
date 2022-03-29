@@ -6,7 +6,7 @@ console.log("index.ts/start");
 function buttonsSubmitClick(){
 //referencia inputtext
 const inputText =<HTMLInputElement>document.getElementById('inputText');
-
+let bPalindrome= null;
 //Invocar función isPalindrome
 if(inputText){
 const bPalindrome = isPalindrome("inputText");
