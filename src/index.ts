@@ -7,16 +7,14 @@ function buttonsSubmitClick(){
 //referencia inputtext
 const inputText =<HTMLInputElement>document.getElementById('inputText');
 let bPalindrome= null;
+let testooo = inputText.value;
 //Invocar función isPalindrome
 if(inputText){
-const bPalindrome = isPalindrome("inputText");
+const bPalindrome = isPalindrome(testooo);
 console.log(bPalindrome);
-}
-}
-//Actualizar div result
 const divResult = <HTMLDivElement>document.getElementById('divResult');
 if(divResult){
-    if(isPalindrome("inputText")){
+    if(bPalindrome){
         divResult.innerText = 'Es palindrome!';
         divResult.className = "palindrome";
     }
@@ -25,6 +23,11 @@ if(divResult){
         divResult.className = "notPalindrome";
     }
 }
+
+}
+}
+//Actualizar div result
+
 const btn= document.querySelector('button');
 if (btn) {
     console.log('attaching listener');
